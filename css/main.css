@@ -86,6 +86,7 @@ font-family: 'Poppins', sans-serif;
 row-gap: 10px;
 }
 
+
 .nav-list__link{
 color: var(--header-text);
 transition: opacity 0.2s ease;
@@ -136,14 +137,14 @@ padding: 0 15px;
 }
 
 .header__title {
-font-size: 40px;
+font-size: 60px;
 font-weight: 700;
 line-height: 1.4;
 margin-bottom: 20px;
 }
 
 .header__title strong {
-    font-size: 60px;
+    font-size: 60 px;
     font-weight: 700;
 }
 
@@ -338,121 +339,4 @@ line-height: 1.5;
 
 }
 
-@media (max-width: 641px) {
-    .header__title {
-        font-size: 30px;
-    }
-    
-    .header__title strong {
-        font-size: 40px;
-    }
 
-    .header {
-        min-height: unset;
-    }
-
-    .section {
-        padding: 120px 0;
-       
-    }
-
-    .title-1 {
-        font-size: 40px;
-        margin-bottom: 50px;
-    }
-
-    .project__title {
-        font-size: 22px;
-    }
-
-    .footer {
-        padding: 40px 0 30px;
-        
-    }
-
-    .social__item {
-        width: 28px;
-    }
-
-    .social {
-        column-gap: 20px;
-    }
-
-    .footer__wrapper {
-        row-gap: 20px;
-    }
-
-    .title-2 {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-
-    .content-list {
-        row-gap: 60px;
-    }
-
-    .content-list__item {
-        font-size: 16px;
-    }
-
-    .project-details__desc {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-
-    .nav-row {
-        justify-content: space-between;
-    }
-
-    .dark-mode-btn {
-        order: 0;
-    }
-
-
-} 
-
-.dark-mode-btn {
-    width: 51px;
-    height: 26px;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 50px;
-    background-color: #272727;
-    padding: 5px;
-    position: relative;
-    order: 9;
-}
-
-.dark-mode-btn__icon {
- position: relative;
- z-index: 9;
-}
-
-.dark-mode-btn::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: var(--white);
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    transition: left 0.2s ease-in;
-}
-
-.dark-mode-btn--active::before {
-    left: 26px;
-
-}
-
-.dark {
-    --page-bg: #252526;
-    --text-color: var(--white);
-    --title-1:var(--white);
-
-    --project-card-bg:var(--black);
-    --project-card-text: var(--white);
-    --box-shadow:0px 5px 35px rgba(0, 0, 0, 0.8);
-
-}
